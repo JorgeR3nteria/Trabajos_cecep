@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/comuna', [ComunaController::class, 'index'])->name('comunas.index');
 Route::post('/comuna', [ComunaController::class, 'store'])->name('comunas.store');
 Route::get('/comuna/create', [ComunaController::class,'create'])->name('comunas.create');
+Route::delete('/comuna/{comuna}', [ComunaController::class,'detroy'])->name('comunas.detroy');
