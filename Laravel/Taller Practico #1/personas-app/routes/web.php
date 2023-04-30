@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/comuna', [ComunaController::class,'index']);
-
+Route::get('/comuna', [ComunaController::class, 'index'])->name('comunas.index');
+Route::post('/comuna', [ComunaController::class, 'store'])->name('comunas.store');
+Route::get('/comuna/create', [ComunaController::class,'create'])->name('comunas.create');
