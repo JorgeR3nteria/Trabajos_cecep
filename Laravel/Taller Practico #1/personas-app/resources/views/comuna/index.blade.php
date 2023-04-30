@@ -12,7 +12,6 @@
   </head>
   <body>
     <h1>Listado de Comunas</h1>
-    {{-- <a href="{{ route('comuna.create') }}" class="btn btn-success">Add</a> --}}
     <table class="table">
       <thead>
         <tr>
