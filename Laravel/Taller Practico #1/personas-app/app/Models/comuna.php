@@ -9,6 +9,6 @@ class comuna extends Model
 {
     use HasFactory;
     protected $table = 'tb_comuna';
-    protected $primarykey = 'comu_codi';
+    protected $primaryKey = 'comu_codi';
     public $timestamps = false;
 }
